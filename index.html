@@ -329,12 +329,20 @@
      ⭐ TOP-LEFT BACK BUTTON (outside the card)
      ============================================================ */
   .top-back-wrapper {
-    max-width: 1200px;
-    margin: 1.5rem auto 0 auto;
-    padding: 0 2rem;
-    display: flex;
-    justify-content: flex-start; /* ← left aligned */
-  }
+  position: fixed;
+  top: 5.9rem;
+  left: 0;
+  right: 0;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: flex-start;
+  pointer-events: none;
+  z-index: 90;
+}
+
+.back-btn {
+  pointer-events: auto;
+}
 
   .back-btn {
     display: inline-flex;
